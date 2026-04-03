@@ -1,0 +1,39 @@
+name: todo_diary
+description: 跨平台待办事项和日记应用，支持云端同步和智能功能
+publish_to: 'none'
+version: 3.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI & Design
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.1
+  google_fonts: ^6.1.0
+  
+  # Data & Storage (使用简化版本避免sqlite3下载问题)
+  shared_preferences: ^2.5.5
+  path_provider: ^2.1.1
+  path: ^1.9.0
+  
+  # 加密
+  encrypt: ^5.0.3
+  
+  # 权限处理 (用于完整版本)
+  permission_handler: ^12.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/fonts/
