@@ -1,70 +1,80 @@
-# TDD - Todo & Diary 跨平台应用
+# TDD - Todo & Diary Cross-Platform App
 
 ![TDD Logo](https://img.shields.io/badge/TDD-Todo%20%26%20Diary-blue)
 ![Flutter](https://img.shields.io/badge/Flutter-3.41.5-blue)
 ![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Windows%20%7C%20Web-green)
 
-一个功能丰富的跨平台待办事项和日记应用，支持在电脑（Windows）和手机（Android）上运行，通过文件同步实现数据互通，并包含强大的自定义功能。
+A feature-rich, cross-platform To-Do and Diary application that works on both desktop (Windows) and mobile (Android). It enables seamless data synchronization via file sync and offers powerful customization features.
 
-## ✨ 主要特性
+## ✨ Key Features
 
-### 📝 待办事项管理
-- 创建、编辑、删除待办事项
-- 标记完成/未完成状态
-- 设置描述信息
-- 智能排序和筛选
+### 📝 To-Do Management
 
-### 📔 日记记录
-- 富文本日记编辑
-- 心情标记（😊 开心、😢 难过、🤩 兴奋等）
-- 标签分类和搜索
-- 收藏重要日记
+* Create, edit, and delete tasks
+* Mark tasks as complete/incomplete
+* Set descriptions
+* Smart sorting and filtering
 
-### 🎨 强大的自定义功能
-- **字体自定义**：支持多种字体选择和下载
-- **主题自定义**：丰富的颜色主题选择器
-- **界面自定义**：可调节字体大小、间距和布局
-- **个性化设置**：自定义应用名称和界面元素
+### 📔 Diary Logging
 
-### 🔄 跨平台数据同步
-- 自动检测同步文件夹
-- 一键同步数据
-- 支持多设备数据同步
-- 数据备份和恢复
+* Rich-text diary editor
+* Mood tags (😊 Happy, 😢 Sad, 🤩 Excited, etc.)
+* Tagging, categorization, and search
+* Favorite important entries
 
-### 🔒 数据安全
-- 本地数据加密存储
-- 安全的同步机制
-- 数据导出/导入功能
+### 🎨 Powerful Customization
 
-## 📱 支持平台
+* **Font Customization**: Supports multiple font choices and downloads
+* **Theme Customization**: Rich color theme selector
+* **UI Customization**: Adjust font size, spacing, and layout
+* **Personalization**: Customize app name and interface elements
 
-| 平台 | 状态 | 安装方式 |
-|------|------|----------|
-| Android | ✅ 完全支持 | APK安装或开发模式运行 |
-| Windows | ✅ 完全支持 | EXE文件或开发模式运行 |
-| Web | ⚠️ 有限支持 | 浏览器访问（桌面平台功能受限） |
+### 🔄 Cross-Platform Data Sync
 
-## 🚀 快速开始
+* Automatically detect sync folders
+* One-click data synchronization
+* Multi-device data sync
+* Backup and restore data
 
-### 1. 安装Flutter环境
-确保已安装Flutter SDK（版本3.0.0+）
+### 🔒 Data Security
+
+* Local encrypted data storage
+* Secure synchronization mechanism
+* Data export/import functionality
+
+## 📱 Supported Platforms
+
+| Platform | Status             | Installation Method                       |
+| -------- | ------------------ | ----------------------------------------- |
+| Android  | ✅ Fully Supported  | APK installation or in development mode   |
+| Windows  | ✅ Fully Supported  | EXE file or in development mode           |
+| Web      | ⚠️ Limited Support | Browser access (limited desktop features) |
+
+## 🚀 Quick Start
+
+### 1. Install Flutter Environment
+
+Make sure Flutter SDK (version 3.0.0+) is installed.
+
 ```bash
 flutter doctor
 ```
 
-### 2. 获取项目依赖
+### 2. Get Project Dependencies
+
 ```bash
 cd todo_diary
 flutter pub get
 ```
 
-### 3. 运行应用
-- **Android**：`flutter run -d android`
-- **Windows**：`flutter run -d windows`
-- **Web**：`flutter run -d chrome`
+### 3. Run the App
 
-### 4. 构建发布版本
+* **Android**: `flutter run -d android`
+* **Windows**: `flutter run -d windows`
+* **Web**: `flutter run -d chrome`
+
+### 4. Build the Release Version
+
 ```bash
 # Android APK
 flutter build apk --release
@@ -72,100 +82,110 @@ flutter build apk --release
 # Windows EXE
 flutter build windows --release
 
-# Web版本
+# Web version
 flutter build web --release
 ```
 
-## 🛠️ 详细使用指南
+## 🛠️ Detailed User Guide
 
-### 待办事项功能
-1. 在主页点击"待办事项"标签
-2. 在输入区域填写标题和描述
-3. 点击"添加待办"按钮
-4. 点击待办事项左侧的复选框标记完成
-5. 点击删除图标删除待办事项
+### To-Do Feature
 
-### 日记功能
-1. 在主页点击"日记"标签
-2. 点击"写日记"按钮
-3. 输入标题、选择心情、撰写内容
-4. 点击保存按钮
-5. 点击心形图标收藏重要日记
+1. Tap the "To-Do" tab on the homepage
+2. Fill in the title and description in the input area
+3. Tap the "Add To-Do" button
+4. Tap the checkbox on the left of the task to mark it as completed
+5. Tap the delete icon to remove a task
 
-### 同步功能
-1. 在主页点击"同步"标签
-2. 应用会自动检测并创建同步文件夹
-3. 点击"立即同步"按钮
-4. 在其他设备上运行应用并重复步骤1-3
-5. 数据将自动在不同设备间同步
+### Diary Feature
 
-**默认同步目录**：
-- Windows：`文档\TDD_Sync`
-- Android：`内部存储\Documents\TDD_Sync`
+1. Tap the "Diary" tab on the homepage
+2. Tap the "Write Diary" button
+3. Enter a title, choose a mood, and write the content
+4. Tap the save button
+5. Tap the heart icon to favorite important diaries
 
-### 自定义功能
+### Sync Feature
 
-#### 字体自定义
-1. 进入"设置"页面
-2. 在"字体和界面自定义"部分浏览可用字体
-3. 点击字体预览进行选择
-4. 如果字体未下载，点击"下载"按钮
+1. Tap the "Sync" tab on the homepage
+2. The app will automatically detect and create a sync folder
+3. Tap the "Sync Now" button
+4. Run the app on other devices and repeat steps 1-3
+5. Data will automatically sync between devices
 
-#### 主题自定义
-1. 进入"设置"页面
-2. 在"应用设置"部分选择主题颜色（蓝色、绿色、紫色、橙色）
-3. 更改立即生效
+**Default Sync Directory**:
 
-#### 界面自定义
-1. 进入"设置"页面
-2. 在"字体和界面自定义"部分
-3. 调节字体大小、行间距、项目间距
-4. 选择界面密度（紧凑、标准、宽松）
+* Windows: `Documents\TDD_Sync`
+* Android: `Internal Storage\Documents\TDD_Sync`
 
-## ⚙️ 项目结构
+### Customization Features
+
+#### Font Customization
+
+1. Go to the "Settings" page
+2. Browse available fonts in the "Font and UI Customization" section
+3. Tap the font preview to select it
+4. If the font is not downloaded, tap the "Download" button
+
+#### Theme Customization
+
+1. Go to the "Settings" page
+2. Select a theme color (blue, green, purple, orange) in the "App Settings" section
+3. Changes take effect immediately
+
+#### UI Customization
+
+1. Go to the "Settings" page
+2. In the "Font and UI Customization" section, adjust font size, line spacing, and item spacing
+3. Choose UI density (compact, standard, relaxed)
+
+## ⚙️ Project Structure
 
 ```
 todo_diary/
-├── lib/                     # Dart源代码
-│   ├── main.dart           # 主应用入口（完整功能版）
-│   ├── services/           # 业务服务
-│   │   └── font_service.dart      # 字体管理服务
-│   ├── pages/              # 页面组件
-│   ├── models/             # 数据模型
-│   ├── core/               # 核心功能
-│   └── theme/              # 主题配置
-├── android/                # Android平台配置
-├── windows/                # Windows平台配置
-├── web/                    # Web平台配置
-├── assets/                 # 静态资源
-│   ├── fonts/              # 字体文件
-│   └── images/             # 图片资源
-└── pubspec.yaml           # 项目依赖配置
+├── lib/                     # Dart source code
+│   ├── main.dart            # Main entry point (full version)
+│   ├── services/            # Business services
+│   │   └── font_service.dart    # Font management service
+│   ├── pages/               # Page components
+│   ├── models/              # Data models
+│   ├── core/                # Core functionality
+│   └── theme/               # Theme configurations
+├── android/                 # Android platform configuration
+├── windows/                 # Windows platform configuration
+├── web/                     # Web platform configuration
+├── assets/                  # Static resources
+│   ├── fonts/               # Font files
+│   └── images/              # Image resources
+└── pubspec.yaml             # Project dependencies configuration
 ```
 
-## 🔧 技术架构
+## 🔧 Technical Architecture
 
-### 核心技术
-- **Flutter 3.41.5**：跨平台UI框架
-- **Dart 3.0.0+**：编程语言
-- **Material Design 3**：设计系统
+### Core Technologies
 
-### 状态管理
-- Provider模式
-- 本地配置持久化
-- 实时数据更新
+* **Flutter 3.41.5**: Cross-platform UI framework
+* **Dart 3.0.0+**: Programming language
+* **Material Design 3**: Design system
 
-### 数据存储
-- SharedPreferences（本地键值存储）
-- JSON文件格式（同步和备份）
-- AES加密（敏感数据）
+### State Management
 
-### 同步机制
-- 文件系统读写
-- 自动检测平台差异
-- 简单高效的数据交换
+* Provider pattern
+* Local configuration persistence
+* Real-time data updates
 
-## 📦 依赖包
+### Data Storage
+
+* SharedPreferences (local key-value storage)
+* JSON file format (for sync and backup)
+* AES encryption (for sensitive data)
+
+### Sync Mechanism
+
+* File system read/write
+* Auto-detect platform differences
+* Simple and efficient data exchange
+
+## 📦 Dependencies
 
 ```yaml
 dependencies:
@@ -182,114 +202,124 @@ dependencies:
   path_provider: ^2.1.1
   path: ^1.9.0
   
-  # 加密
+  # Encryption
   encrypt: ^5.0.3
   
-  # 权限处理
+  # Permissions
   permission_handler: ^12.0.1
 ```
 
-## 🧪 测试指南
+## 🧪 Testing Guide
 
-### 功能测试清单
-- [ ] 待办事项的增删改查
-- [ ] 日记的创建和编辑
-- [ ] 字体切换功能
-- [ ] 主题颜色变更
-- [ ] 数据同步功能
-- [ ] 配置持久化
-- [ ] 跨平台兼容性
+### Feature Testing Checklist
 
-## 🔄 同步配置详解
+* [ ] CRUD operations for to-do tasks
+* [ ] Diary creation and editing
+* [ ] Font switching functionality
+* [ ] Theme color changes
+* [ ] Data synchronization
+* [ ] Configuration persistence
+* [ ] Cross-platform compatibility
 
-### 工作原理
-1. 应用在每个设备上创建本地同步文件夹
-2. 数据以JSON格式导出到同步文件夹
-3. 其他设备从同步文件夹导入数据
-4. 支持一键同步操作
+## 🔄 Sync Configuration Details
 
-## 🚨 故障排除
+### How it Works
 
-### 常见问题
+1. The app creates a local sync folder on each device
+2. Data is exported to the sync folder in JSON format
+3. Other devices import data from the sync folder
+4. One-click sync operation is supported
 
-#### 1. 应用无法启动
+## 🚨 Troubleshooting
+
+### Common Issues
+
+#### 1. App Won't Start
+
 ```bash
-# 清理构建缓存
+# Clean build cache
 flutter clean
 
-# 重新获取依赖
+# Fetch dependencies again
 flutter pub get
 
-# 运行诊断
+# Run diagnostics
 flutter doctor
 ```
 
-#### 2. 同步功能失效
-1. 检查同步目录权限
-2. 确认存储空间充足
-3. 验证文件是否被占用
-4. 重启应用并重试
+#### 2. Sync Feature Not Working
 
-#### 3. 字体无法加载
-1. 检查网络连接（下载字体时）
-2. 确认存储权限
-3. 重新下载字体文件
-4. 检查字体文件格式
+1. Check the sync folder permissions
+2. Make sure there is enough storage space
+3. Verify if the file is in use
+4. Restart the app and retry
 
-#### 4. Web平台功能受限
-- Web平台无法使用文件同步功能
-- 建议使用Android或Windows版本进行数据同步
-- Web版本适合临时查看和编辑
+#### 3. Fonts Not Loading
 
-## 📋 版本历史
+1. Check the network connection (when downloading fonts)
+2. Verify storage permissions
+3. Redownload the font files
+4. Check the font file format
+
+#### 4. Limited Web Platform Features
+
+* Web platform does not support file sync
+* Use Android or Windows versions for syncing data
+* Web version is suitable for temporary viewing and editing
+
+## 📋 Version History
 
 ### v3.0.0 (2026-03-31)
-- ✅ 应用名称更新为"TDD"
-- ✅ 添加完整的字体自定义功能
-- ✅ 新增主题和界面自定义选项
-- ✅ 优化同步机制
-- ✅ 统一所有平台的安装包配置
-- ✅ 清理冗余文件，项目结构优化
+
+* ✅ Updated app name to "TDD"
+* ✅ Added complete font customization functionality
+* ✅ New theme and UI customization options
+* ✅ Optimized synchronization mechanism
+* ✅ Unified configuration for all platform install packages
+* ✅ Cleaned up redundant files, optimized project structure
 
 ### v2.0.0 (2026-03-30)
-- ✅ 实现基本数据同步功能
-- ✅ 添加日记管理功能
-- ✅ 完善待办事项系统
-- ✅ 支持多平台构建
+
+* ✅ Implemented basic data synchronization
+* ✅ Added diary management feature
+* ✅ Enhanced to-do system
+* ✅ Supported multi-platform builds
 
 ### v1.0.0 (2026-03-29)
-- ✅ 基础待办事项功能
-- ✅ 基本UI框架
-- ✅ 跨平台支持
 
-## 🤝 贡献指南
+* ✅ Basic to-do feature
+* ✅ Basic UI framework
+* ✅ Cross-platform support
 
-欢迎贡献代码！请遵循以下步骤：
+## 🤝 Contribution Guidelines
 
-1. Fork 本仓库
-2. 创建功能分支 (`git checkout -b feature/新功能`)
-3. 提交更改 (`git commit -m '添加新功能'`)
-4. 推送到分支 (`git push origin feature/新功能`)
-5. 创建Pull Request
+We welcome code contributions! Please follow these steps:
 
-### 代码规范
-- 使用Dart代码规范
-- 添加必要的注释
-- 编写单元测试
-- 更新相关文档
+1. Fork this repository
+2. Create a feature branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Create a Pull Request
 
-## 📄 许可证
+### Code Standards
+
+* Follow Dart code standards
+* Add necessary comments
+* Write unit tests
+* Update relevant documentation
+
+## 📄 License
 
 MIT License
 
-## 📞 联系与支持
+## 📞 Contact and Support
 
-- **问题反馈**：请提交GitHub Issue
-- **功能建议**：欢迎提交Pull Request
-- **技术咨询**：查看文档或联系开发者
+* **Issue Reporting**: Please submit a GitHub Issue
+* **Feature Suggestions**: Feel free to submit a Pull Request
+* **Technical Inquiries**: Check the documentation or contact the developers
 
 ---
 
-**TDD - 让生活更有条理，记录每一刻精彩**
+**TDD - Organize your life and record every amazing moment**
 
-*最后更新：2026年3月31日*
+*Last updated: March 31, 2026*
